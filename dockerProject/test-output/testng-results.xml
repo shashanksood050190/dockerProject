@@ -1,33 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="168090" started-at="2019-10-05T16:53:32Z" finished-at="2019-10-05T16:56:21Z">
+  <suite name="Default suite" duration-ms="22484" started-at="2020-01-06T15:10:06Z" finished-at="2020-01-06T15:10:28Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="168090" started-at="2019-10-05T16:53:32Z" finished-at="2019-10-05T16:56:21Z">
-      <class name="docker.SetupDockerGrid">
-        <test-method status="PASS" signature="startDockerGrid()[pri:0, instance:docker.SetupDockerGrid@18be83e4]" name="startDockerGrid" is-config="true" duration-ms="45066" started-at="2019-10-05T16:53:32Z" finished-at="2019-10-05T16:54:18Z">
+    <test name="Default test" duration-ms="22484" started-at="2020-01-06T15:10:06Z" finished-at="2020-01-06T15:10:28Z">
+      <class name="docker.DockerOnAWS">
+        <test-method status="PASS" signature="launchDriver()[pri:0, instance:docker.DockerOnAWS@5622fdf]" name="launchDriver" is-config="true" duration-ms="14414" started-at="2020-01-06T15:10:06Z" finished-at="2020-01-06T15:10:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startDockerGrid -->
-        <test-method status="PASS" signature="stopDockerGrid()[pri:0, instance:docker.SetupDockerGrid@18be83e4]" name="stopDockerGrid" is-config="true" duration-ms="10012" started-at="2019-10-05T16:56:11Z" finished-at="2019-10-05T16:56:21Z">
+        </test-method> <!-- launchDriver -->
+        <test-method status="PASS" signature="Test1()[pri:0, instance:docker.DockerOnAWS@5622fdf]" name="Test1" duration-ms="7664" started-at="2020-01-06T15:10:21Z" finished-at="2020-01-06T15:10:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stopDockerGrid -->
-      </class> <!-- docker.SetupDockerGrid -->
-      <class name="docker.FirefoxOnGrid4">
-        <test-method status="PASS" signature="test4()[pri:0, instance:docker.FirefoxOnGrid4@4b9e13df]" name="test4" duration-ms="112821" started-at="2019-10-05T16:54:18Z" finished-at="2019-10-05T16:56:10Z">
+        </test-method> <!-- Test1 -->
+        <test-method status="PASS" signature="closeDriver(org.testng.ITestResult)[pri:0, instance:docker.DockerOnAWS@5622fdf]" name="closeDriver" is-config="true" duration-ms="102" started-at="2020-01-06T15:10:28Z" finished-at="2020-01-06T15:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test1 status=SUCCESS method=DockerOnAWS.Test1()[pri:0, instance:docker.DockerOnAWS@5622fdf] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4 -->
-      </class> <!-- docker.FirefoxOnGrid4 -->
-      <class name="docker.ChromeOnGrid1">
-        <test-method status="PASS" signature="test1()[pri:0, instance:docker.ChromeOnGrid1@cb5822]" name="test1" duration-ms="39349" started-at="2019-10-05T16:54:18Z" finished-at="2019-10-05T16:54:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- docker.ChromeOnGrid1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closeDriver -->
+      </class> <!-- docker.DockerOnAWS -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
